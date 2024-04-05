@@ -1,0 +1,195 @@
+/* menu de navegacion  */
+.header {
+  background-color: rgba(4, 3, 77, 0.857);
+  height: 14vh;
+  width: 100vw;
+  font-size: 30px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navigation ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  margin-left: 40px;
+  margin-top: 10vh;
+  border-top: 3px solid red;
+
+}
+
+.navigation ul li:hover a {
+  border-top: 3px solid rgb(255, 153, 0);
+}
+
+.navigation li {
+  margin-right: 20px;
+}
+
+.navigation li a {
+  color: white;
+  text-decoration: none;
+}
+
+.encabezado {
+  font-size: 20px;
+  margin-left: 40px;
+}
+
+.logo img {
+  max-width: 200px;
+  height: auto;
+  padding-right: 40px;
+}
+
+
+/* contenido del body */
+.main {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 100vh;
+  margin-top: 5%;
+}
+
+
+/* primera parte del main */
+.FlexContainer {
+  display: flex;
+  width: 60%;
+  background-color: #ede4e4;
+  height: 52vh;
+  flex-direction: row;
+  justify-content: center;
+  /* Centra los elementos horizontalmente */
+  font-size: 25px;
+
+}
+
+
+.contenido {
+  width: 40%;
+  padding: 0px 10px 10px 10px;
+  border-top: 8px solid rgb(242, 50, 29);
+
+}
+
+.contenido h3 {
+  margin: 2%;
+}
+
+.contenido p {
+  margin: 2%;
+}
+
+.img-conten {
+  width: 80%;
+}
+
+.img-conten img {
+  width: 100%;
+}
+
+
+
+
+.layout {
+  width: 60%;
+  height: 61vh;
+  display: grid;
+  grid-template-rows: repeat(3, 1fr);
+  grid-template-columns: 0.8fr 1fr 1fr;
+  justify-content: center;
+  font-size: 25px;
+  margin-top: 10px;
+}
+
+
+
+.layout div img {
+  width: 300px;
+  height: 200px;
+}
+
+.layout .primero {
+  border-top: 8px solid rgb(242, 50, 29);
+}
+
+.layout .grid-izquierdo {
+  margin-left: 20px;
+  background-color: #ede4e4;
+}
+
+.primero h3 {
+  margin: 2%;
+}
+
+.primero p {
+  margin: 2%;
+}
+
+.grid-izquierdo .imagen-izquierda img {
+  width: 100%;
+  height: 100%;
+}
+
+.grid-izquierdo .imagen-izquierda h3 {
+  font-size: 30px;
+}
+
+.imagen-izquierda h3 {
+  margin: 1%;
+}
+
+.imagen-izquierda p {
+  margin: 1%;
+}
+
+
+/* par pantallas de 800px */
+@media screen and (max-width: 800px) {
+  .FlexContainer {
+    flex-direction: column;
+    margin-top: 20px;
+    height: 100%;
+    width: 90%;
+  }
+
+  .contenido {
+    padding: 0px;
+    border-top: 8px solid rgb(242, 50, 29);
+
+  }
+
+  .contenido,
+  .img-conten {
+    width: 100%;
+  }
+
+  .img-conten img {
+    width: 100%;
+    margin-top: 10px;
+    /* Espacio entre el texto y la imagen */
+  }
+
+  .layout {
+    grid-template-columns: repeat(1, 1fr);
+    
+    width: 90%;
+  }
+
+  .layout div img {
+    width: 100%;
+    height: auto;
+  }
+
+  .layout .grid-izquierdo {
+    margin-left: 0;
+  }
+}
